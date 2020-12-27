@@ -23,7 +23,7 @@ class TestSpec(BaseTestSpec):
 
     def TestCases(self):
         self.CASE(ProblemSpec(
-            A=6,
+            A=5,
             B=500
         ))
 
