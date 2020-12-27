@@ -1,0 +1,13 @@
+{
+    "problems": [
+        {
+            "path": "tests/sum"
+        },
+        {
+            "path": "tests/array"
+        },
+        {
+            "path": "tests/graph"
+        }
+    ]
+}

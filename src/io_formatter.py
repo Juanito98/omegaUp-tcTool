@@ -1,4 +1,5 @@
 class IOFormatter:
+
     def LINE(self, *args) -> None:
         self.printToFile(" ".join(str(a) for a in args) + "\n")
 
@@ -10,5 +11,8 @@ class IOFormatter:
         for row in grid:
             self.LINE(*row)
 
+    def setInputFile(self, f) -> None:
+        self.f = f
+
     def printToFile(self, s: str) -> None:
-        print(s, end="")
+        self.f.write(s)
