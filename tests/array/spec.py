@@ -37,4 +37,5 @@ class TestSpec(BaseTestSpec):
         self.CASE(ProblemSpec(N = 5, A = [-2, -1, 2, 3, 0]))
         self.CASE(ProblemSpec(N=5, A=[3, 4, -1, -3, -5]))
         self.CASE(ProblemSpec(N=2, A=[2, -1]))
+        random.seed(10)
         self.CASE(ProblemSpec(N=100000, A=[random.randint(-10, 10) for i in range(100000)]))
