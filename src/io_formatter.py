@@ -1,5 +1,8 @@
 class IOFormatter:
 
+    def EMPTY_LINE(self) -> None:
+        self.printToFile("\n")
+
     def LINE(self, *args) -> None:
         self.printToFile(" ".join(str(a) for a in args) + "\n")
 
